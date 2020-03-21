@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(../imgs/jfl-GfmIT_pseDQ-unsplash-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+input {
+    border-radius: 10%;
+}
+
+.fuhao{
+    height: 600px;
+    width: 600px;
+    position: fixed;
+    top: -50px;
+    right: 0;
+}
+
+/*box-size*/
+
+.info-box-shadow,
+.info-box,
+.main-box {
+    height: 500px;
+    width: 800px;
+}
+
+
+/*main-box*/
+
+.main-box {
+    /*height: 560px;
+    width: 830px;
+    padding: 30px;*/
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-color: aquamarine; */
+    z-index: 1002;
+}
+
+
+/*信息采集框*/
+
+.info-box {
+    background-color: white;
+    padding: 30px;
+    position: absolute;
+    left: 16px;
+    z-index: 1000;
+    /* box-shadow: 3px 3px 20px #333333;
+    -webkit-box-shadow: 3px 3px 20px #333333;
+    -moz-box-shadow: 3px 3px 20px #333333; */
+    border-radius: 10px;
+    border: 8px solid black;
+}
+
+
+/*头像*/
+
+.head-col {}
+
+.head-img-box,
+.head-img {
+    /*display: block;*/
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.head-img-box {
+    cursor: pointer;
+    background-color: aliceblue;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.head-img-box:hover {
+    box-shadow: 0px 1px 10px #333333;
+    -webkit-box-shadow: 0px 1px 10px #333333;
+    -moz-box-shadow: 0px 1px 10px #333333;
+}
+
+
+/*信息输入框*/
+
+.input-public {
+    /*input组件公有样式*/
+    margin-top: 20px;
+}
+
+.return-btn{
+    /* margin-left: 40%; */
+    float: right;
+}
+
+.name-input-box {}
+
+.name-input {}
+
+.department-input-box {}
+
+.department-input {}
+
+.post-input-box {}
+
+.post-input {}
+
+.reason-textarea-box {}
+
+.reason-textarea {
+    overflow: auto;
+    resize: none;
+}
+
+
+/*信息采集框阴影*/
+
+
+.info-box-shadow {
+    background-image: url(../imgs/微信图片_20191116222004.png);
+    background-size: cover;
+    background-position: bottom right;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    z-index: 998;
+    border-radius: 10px;
+}
+
+
+/* // Large devices (desktops, less than 1200px) */
+
+@media (max-width: 1199.98px) {}
+
+
+/* // Medium devices (tablets, less than 992px) */
+
+@media (max-width: 991.98px) {
+    .info-box-shadow,
+    .info-box,
+    .main-box {
+        height: 500px;
+        width: 650px;
+    }
+    .info-input-col h1 {
+        font-size: 2.25rem;
+    }
+}
+
+
+/* // Small devices (landscape phones, less than 768px) */
+
+@media (max-width: 767.98px) {
+    .info-box-shadow,
+    .info-box,
+    .main-box {
+        height: 450px;
+        width: 500px;
+    }
+    .info-input-col h1 {
+        font-size: 1.6rem;
+    }
+    .info-box {
+        padding: 20px;
+    }
+    .head-img-box,
+    .head-img {
+        height: 125px;
+        width: 125px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    body {
+        background-image: url(../imgs/jfl-GfmIT_pseDQ-unsplash-2.jpg);
+    }
+    .info-box-shadow,
+    .info-box,
+    .main-box {
+        height: 600px;
+        width: 350px;
+    }
+    .info-input-col h1 {
+        font-size: 1.5rem;
+    }
+}

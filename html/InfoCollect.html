@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Jcrop-0.9.12/css/jquery.Jcrop.css">
+    <link rel="stylesheet" href="../css/InfoCollect.css">
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/jquery.Jcrop.js"></script>
+    <script src="../js/InfoCollect.js"></script>
+    <title>信息采集</title>
+</head>
+
+<body>
+    <!-- 信息采集容器 -->
+    <div class="main-box">
+
+        <div class="info-box row">
+            <div class="head-col col-sm-4">
+                <div class="head-img-box" id="HeadImgBox">
+                    <span id="uploadTip">点击选择图片</span>
+                    <img id="HeadImg" class="head-img" src="" alt="">
+                </div>
+                <input type="file" name="file" id="uploadHeadBtn" accept="image/png,image/jpg,image/jpeg,image/gif" onchange="onChangeUploadHeadBtn()">
+                <script>
+                    $('#uploadHeadBtn').hide();
+                </script>
+            </div>
+            <div class="info-input-col col-sm-7">
+                <h1>信息采集</h1>
+
+                <div class="input-group flex-nowrap input-public">
+                    <input id="name" type="text" class="form-control" placeholder="姓名" aria-label="Username" aria-describedby="addon-wrapping">
+                </div>
+
+                <div class="input-group flex-nowrap input-public">
+                    <input id="department" type="text" class="form-control" placeholder="社团和部门" aria-label="Department" aria-describedby="addon-wrapping">
+                </div>
+
+                <div class="input-group flex-nowrap input-public">
+                    <input id="post" type="text" class="form-control" placeholder="职务" aria-label="Post" aria-describedby="addon-wrapping">
+                </div>
+
+                <div class="input-group input-public">
+                    <textarea id="reason" class="form-control reason-textarea" rows="4" placeholder="参选原因" aria-label="With textarea"></textarea>
+                </div>
+
+                <input id="submit" type="submit" value="提 交" class="btn btn-primary input-public">
+                <button type="button" id="returnButton" class="btn btn-outline-primary input-public return-btn">去投票</button>
+            </div>
+        </div>
+
+        <div class="info-box-shadow"></div>
+
+    </div>
+
+    <img class="fuhao" src="../imgs/微信图片_20191114220531.png" alt="">
+</body>
+
+</html>

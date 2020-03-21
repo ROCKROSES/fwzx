@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/Vote.css">
+    <script src="../bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="../bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/Vote.js"></script>
+    <title>投票</title>
+</head>
+
+<body data-spy="scroll" data-target="open-button" data-offset="50">
+    <!-- 投票情况部分 -->
+    <div id="TopContainer" class="top-container">
+        <!-- 投票结果排名 -->
+        <div id="mainBox" class="main-box">
+            <div class="voteResult-box">
+                <h1>投票结果</h1>
+                <!-- 前三名 -->
+                <div id="TopThreeBox" class="topThree-box row">
+
+                </div>
+                <!-- 排名列表 -->
+                <div id="voteRankList" class="voteRankList-box">
+
+                </div>
+                <!-- 参选按钮 -->
+                <div class="runElect-button"><strong><a href="InfoCollect.html">我要参选</a><strong></div>
+                <!-- 我要投票按钮 -->
+                <div class="runElect-button"><strong><a href="#theVoteSection">我要投票</a><strong></div>
+                <!-- 展开按钮 -->
+                <div class="open-button"><strong><a href="#theVoteSection">查看全部结果>></a><strong></div>
+            </div>
+            <!-- 排名结果盒子阴影 -->
+            <div class="voteResult-box-shadow"></div>
+            
+        </div>
+
+    </div>
+
+
+    <!-- 选择投票和显示当前票数部分 -->
+    <div id="theVoteSection" class="bottom-container">
+        <!-- 导航栏和搜索框 -->
+        <div class="container box-height">
+            <div class="nav-box">
+                <h1>搜寻你支持的参选人</h1>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="name">姓名</span>
+                    </div>
+                    <input id="searchName" type="text" class="form-control" placeholder="请输入参选人的姓名">
+                </div>
+                <input id="Search" class="btn btn-primary" type="submit" value="搜 索">
+                <input id="Return" class="btn btn-outline-primary" type="submit" value="返 回" disabled>
+            </div>
+            <!-- 所有参选人卡片 -->
+            <div class="candidate-box card">
+                <!-- 提示 -->
+                <div class="card-header">
+                    以下是所有参选人及其当前票数
+                </div>
+                <div id="AllCardBox" class="card-body">
+                        <!-- 参选人信息卡片 -->
+                    <div class="card-deck eachRow-card">
+                       
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 底部网站信息 -->
+            <hr>
+            <div class="web-info container">
+                <div>
+                    <p>
+                        <small>本站由共青团广东药科大学学生委员会网络中心开发并维护</small>
+                    </p>
+                    <p>
+                        <small>备案号:&nbsp;<a href="http://www.beian.miit.gov.cn/" target="_blank">粤ICP备19087711号</a></small>                        
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
